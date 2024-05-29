@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
-
+const date = new Date();
+const year = date.getFullYear();
 ---
 
 <Layout title="Bienvenido a Extremebike">
@@ -12,9 +13,27 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 		
 	</main>
+
+	<footer class=" flex items-center absolute w-full bottom-0 font-bold text-xl h-12 bg-gray-400">
+		<div class=" absolute left-10">
+			<p>Extremebike - {year}</p>
+		</div>
+			
+		<div class="absolute right-10">
+			<ul class="flex flex-row">
+				<li class="p-5">Facebook</li>
+				<li class="p-5">Instagram</li>
+				<li class="p-5">Twitter</li>
+			</ul>
+		</div>
+	</footer>
 </Layout>
 
 <style>
-	
+	footer {
+
+		
+
+	}
 
 </style>

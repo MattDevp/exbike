@@ -20,28 +20,31 @@ const { title } = Astro.props;
 	<body>
 		<header class=" bg-no-repeat bg-cover overflow-hidden rounded-lg">
 			<nav class="">
-				<div class="max-w-screen-xl flex items-center justify-between mx-auto p-4">
+				<div class="max-w-screen-xl flex items-center justify-between mx-auto p-5 lg:flex-row sm:flex-col">
 					<a href="https://www.extremebike.cl/" class="flex items-center space-x-3 rtl:space-x-reverse">
 						<img src="/public/favicon.ico" class="h-8" alt="extremebike logo" />
 						<span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Extremebike</span>
 					</a>
 				
-					<div class=" w-full md:block md:w-auto" id="navbar-default">
-						<ul class="font-medium flex flex-col p-4 md:p-0 mt-4  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
-							<li>
-								<a href="/" class="block py-2 px-3 text-white ">Inicio</a>
-							</li>
-							<li>
-								<a href="#about" class="block py-2 px-3 text-white">Sobre nosotros</a>
-							</li>
-							<li>
-								<a href="#contact" class="block py-2 px-3 text-white">Contactanos</a>
-							</li>
-						</ul>
+					<div>
+						<div class=" w-full md:block md:w-auto sm:flex " id="navbar-default">
+							<ul class="font-medium flex flex-col p-4 md:p-0 mt-4  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+								<li>
+									<a href="/" class="block py-2 px-3 text-white ">Inicio</a>
+								</li>
+								<li>
+									<a href="#about" class="block py-2 px-3 text-white">Sobre nosotros</a>
+								</li>
+								<li>
+									<a href="#contact" class="block py-2 px-3 text-white">Contactanos</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
+
 				<div class="max-w-screen-xl flex items-center justify-center h-96 text-white">
-					<div class="border">
+					<div class="border flex flex-col">
 						<h1 class=" text-4xl text-center">Texto sobre el negocio</h1>
 						<p class=" text-2xl text-center">La descripcion del negocio</p>
 						<p class=" text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque incidunt id nostrum nihil corrupti reprehenderit aliquid asperiores harum praesentium mollitia dignissimos sit molestiae architecto quisquam, consequuntur dolorum accusamus. Omnis, nemo.</p>
@@ -62,6 +65,7 @@ const { title } = Astro.props;
 	}
 
 
+screenshotscreenshot							
 	html {
 		font-family: system-ui, sans-serif;
 		background: whitesmoke;
